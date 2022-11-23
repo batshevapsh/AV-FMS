@@ -7,7 +7,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view, parser_classes
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
-from vehicle_api.models import Car
+from core.models import Car
 from vehicle_api.serializers import CarSerializer
 from rest_framework.decorators import api_view
 

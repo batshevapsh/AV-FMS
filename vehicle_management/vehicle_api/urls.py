@@ -4,5 +4,5 @@ from django.urls import path
 
 urlpatterns = [
    
-    path('car/', car.view_all_cars),
+    path('', car.view_all_cars),
 ]

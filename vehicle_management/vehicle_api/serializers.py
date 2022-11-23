@@ -1,4 +1,4 @@
-from vehicle_api.models import Car
+from core.models import Car
 from rest_framework import serializers
 
 
