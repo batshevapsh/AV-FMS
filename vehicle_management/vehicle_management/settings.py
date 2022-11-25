@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'core'
+    'core',
+    'car'
 ]
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,

@@ -58,9 +58,11 @@ class Car(models.Model):
      vehicle_number = models.CharField(max_length=20)
      availability = models.BooleanField(default=True)
      manufacturer=models.CharField(max_length=20)
+     
 
 class Task(models.Model):
      car = models.ForeignKey(Car, on_delete=models.CASCADE)
      user=models.ForeignKey(User, on_delete=models.CASCADE)
+     is_active= models.BooleanField(default=True)
 
 

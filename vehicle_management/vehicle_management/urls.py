@@ -38,5 +38,6 @@ urlpatterns = [
    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('api/vehicle/', include('vehicle_api.urls')),
     path('api/user/', include('user.urls')),
+    path('api/car/', include('car.urls')),
    
 ]
