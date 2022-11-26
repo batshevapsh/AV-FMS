@@ -8,8 +8,3 @@ class CarSerializer(serializers.ModelSerializer):
     class Meta:
         model = Car
         fields = ['vehicle_number','availability','manufacturer']
-class TaskSerializer(serializers.ModelSerializer):
-     class Meta:
-        model = Task
-        fields = '__all__'
-        depth = 2

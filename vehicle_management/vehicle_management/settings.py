@@ -32,9 +32,10 @@ ALLOWED_HOSTS = []
 AUTH_USER_MODEL = 'core.User'
 
 INSTALLED_APPS = [
-    'vehicle_api.apps.VehicleApiConfig',
+   # 'vehicle_api.apps.VehicleApiConfig',
      'user',
    'rest_framework.authtoken',
+   #'account'
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -42,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'core',
-    'car'
+    'car',
+    'task',
+   
 ]
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
@@ -60,6 +63,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'vehicle_management.urls'
+
 
 TEMPLATES = [
     {

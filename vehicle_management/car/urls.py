@@ -9,11 +9,11 @@ from django.urls import (
 router = DefaultRouter()
 
 app_name = 'car'
-#router.register('car', views.GetCarView)
+router.register('list', views.GetCarView)
 
 urlpatterns = [
     path('', include(router.urls)),
     path('create', views.CreateCarView.as_view(), name=""),
-    path('', views.CreateAPIView.as_view(), name=""),
-    path('create-task/<int:pk>/<int:user_id>',views.CreateTaskView.as_view(), name='create-task'),
+    #path('', views.GetCarView.as_view(), name=""),
+   
 ]

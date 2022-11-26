@@ -10,6 +10,7 @@ Database models.
 """
 import uuid
 import os
+from django.conf import settings
 
 from django.db import models
 from django.contrib.auth.models import (
@@ -62,7 +63,11 @@ class Car(models.Model):
 
 class Task(models.Model):
      car = models.ForeignKey(Car, on_delete=models.CASCADE)
-     user=models.ForeignKey(User, on_delete=models.CASCADE)
+     user = models.ForeignKey(User,on_delete=models.CASCADE),
      is_active= models.BooleanField(default=True)
+     start_date = models.DateTimeField(null=True,auto_now_add=True)
+     end_date = models.DateTimeField(null=True)
+    
+
 
 
