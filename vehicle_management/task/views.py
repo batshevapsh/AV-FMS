@@ -39,7 +39,7 @@ class CreateTaskView(CreateAPIView):
            return Response("car not avlaibele", status=status.HTTP_400_BAD_REQUEST)
         #if (task_active_with_curent_user):
             #return Response("you have open task", status=status.HTTP_400_BAD_REQUEST)
-        serializer.save(user=user, car=car,is_active=True)
+        serializer.save("""user=user to do""", car=car,is_active=True)
         car.availability=False
         car.save() 
 
